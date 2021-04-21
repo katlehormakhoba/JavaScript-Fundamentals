@@ -1,3 +1,5 @@
+'use strict';
+
 const age= 17;
 const isOldEnough = age >= 18;
 
@@ -17,3 +19,9 @@ console.log(18 =='18');
 const fav = prompt(`Whats your favorate number ?`);
 
 if(fav == 23) console.log(`Cool! 23 is an amazing number.😎`);
+
+let hasDriversLicense = false;
+const passTest = true;
+
+if(passTest) hasDriversLicense = true;
+if(hasDriversLicense) console.log('I can drive😋');
