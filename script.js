@@ -31,7 +31,5 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2,4);
 console.log(appleOrangeJuice);
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/katlehormakhoba/JavaScript-Fundamentals.git
-git push -u origin main
+
+
