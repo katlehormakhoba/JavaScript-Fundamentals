@@ -1,27 +1,51 @@
 'use strict';
 
 
-//OBJECT
+//LOOPS
 
 const jonas = {
     firstName: 'Katleho',
     lastName: 'Makhoba',
-    age: 2021-1996,
+    birthYear: 1996,
     job: 'Software Developer',
-    friends: ['Michael', 'Peter', 'Steven']
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    //OBJECT METHODS
+    calcAge: function (birthYear) {
+        console.log(this);
+        return 2021 - birthYear;
+    },
+    calcAge2: function () {
+        return 2021 - this.birthYear;
+    }
 };
 
-console.log(jonas);
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
-
-const nameKey = 'Name';
-
-console.log(jonas[`first${nameKey}`]);
-console.log(jonas['last'+nameKey]);
+const katleho = ['Katleho',
+    'Makhoba',
+    1996, 'Software Developer',
+    ['Michael', 'Peter', 'Steven']
+];
 
 
-const interestedIn = prompt(`What do you want to know about Katleho ? 
-                    Choose between firstName, lastName, job, age`);
 
-console.log(jonas[interestedIn]);
+
+//FOR LOOP
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weight repetition ${rep}`);
+// }
+
+
+
+//WHILE LOOP
+
+
+
+let dice = Math.trunc(Math.random() * 6)+ 1; // random number
+while(dice !== 6){
+    console.log('You rolled', dice);
+    
+ dice = Math.trunc(Math.random() * 6)+ 1;
+}
+// console.log('dice',dice);
