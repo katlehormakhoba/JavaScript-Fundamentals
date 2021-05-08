@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.first {
+    color: tomato;
+}
+
+#your-name {
+    background-color: yellow;
+    border: 5px solid #444;
+}
