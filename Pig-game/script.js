@@ -74,11 +74,9 @@ btnHold.addEventListener('click', () => {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
-    }else{
-        switchPlayer();
+    } else {
+      switchPlayer();
     }
-
-    
   }
 });
 
