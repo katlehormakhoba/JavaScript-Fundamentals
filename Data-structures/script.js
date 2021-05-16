@@ -38,11 +38,11 @@ const restaurant = {
 const airline = 'TAP Air Portugal';
 const plane = 'A320';
 
-console.log(airline.length);
-console.log(airline.indexOf('r'));
+// console.log(airline.length);
+// console.log(airline.indexOf('r'));
 
-console.log(airline.lastIndexOf('r'));
-console.log(airline.indexOf('portugal'));
+// console.log(airline.lastIndexOf('r'));
+// console.log(airline.indexOf('portugal'));
 
 console.log(airline.slice(4));
 console.log(airline.slice(4, 7));
@@ -73,7 +73,54 @@ const anouncement =
 console.log(anouncement.replace('door', 'gate'));
 console.log(anouncement.replaceAll('door', 'gate'));
 console.log(passengerCorrect);
+const words = `a+very+nice+string`.split('+')
 
+// console.log(words)
+
+const revampWords = words.join(' ');
+console.log(revampWords)
+
+// for(const n of words)console.log(n)
+
+const maskCreditCard = function(number){
+  const str = number+ '';
+  const length = str.length;
+  console.log(str.slice(-4).padStart(length, '*'))
+
+}
+
+
+maskCreditCard(475645675454657455)
+maskCreditCard(`768758759876067675758`)
+maskCreditCard(1)
+
+/*
+underscore_case
+ first_name
+Some_Variable 
+  calculate_AGE
+delayed_departure
+*/
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+// const lastStr = newStr.trim();
+
+// for(let n =0; n< newStr.length-1; n++) console.log(newStr[n].trim().padEnd(25,' ')+line.repeat(n+1))
+const button = document.querySelector('button');
+
+button.addEventListener('click', ()=> {
+  const text = document.querySelector('textarea').value;
+
+
+  // console.log(fix.split('\n'))
+  const newStr = text.split('\n');
+  const line = '✅'; 
+  for(let n =0; n< newStr.length; n++) console.log(newStr[n].trim().padEnd(25,' ')+line.repeat(n+1))
+
+
+})
 //-----------------------------Distructuring array
 // const arr = [2,3,4];
 
